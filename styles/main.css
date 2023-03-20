@@ -1,0 +1,27 @@
+header {
+    background-color: white;
+    color: white;
+    padding: 10px 30px 17px 30px;
+    border-bottom: 1.5px solid #dcdcde;
+}
+
+header nav h1{
+    margin: 0;
+    display: inline;
+    color: #727db3;
+    font-size: 20px;
+    padding: 0 50% 5px 10%;
+    font-family: Sans-Serif;
+}
+
+header nav ul {
+    display: inline-block;
+    margin: 5px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 15px;
+    color: #727db3;
+}
+
