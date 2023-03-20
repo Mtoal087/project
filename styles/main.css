@@ -1,8 +1,13 @@
 header {
-    background-color: white;
+    margin: -10px;
+    background-color: #333;
     color: white;
-    padding: 10px 30px 17px 30px;
+    padding: 10px 0 17px 0;
     border-bottom: 1.5px solid #dcdcde;
+}
+
+body {
+    background-color: #333;
 }
 
 header nav p{
@@ -22,7 +27,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 15px 7px 5px 0;
+    padding: 15px 45px 5px 0;
     color: #727db3;
     font-family: sans-serif;
 }
@@ -50,16 +55,99 @@ header nav ul li a:hover::after{
 }
 
 .intro{
-    margin: 0;
-    padding: 80px 0 0 80px;
+    margin: -10px;
+    padding: 60px 0 50px 10%;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
+    color: #dcdcde;
+    position: relative;
 }
 
 .intro .name {
     color: #727db3;
     display: inline;
-    border: 3px solid #727db3;
-    border-radius: 100px;
-    padding: 15px;
+    padding: 10px;
+}
+
+.intro img {
+    display: inline-flex;
+    border: #dcdcde;
+    width: 350px;
+    height: auto;
+    float: right;
+    margin: 10px 15% 0 0;
+}
+
+
+
+.intro img {
+    --color: #dcdcde; /* the border color */
+    --border: 10px;   /* the border thickness*/
+    --offset: 20px;   /* control the offset*/
+    --gap: 5px;       /* the gap on hover */
+    
+    --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+    --_o: calc(3*var(--offset));
+    padding: 
+      calc(var(--gap) + var(--border))
+      calc(var(--gap) + var(--border) + var(--offset))
+      calc(var(--gap) + var(--border) + var(--offset))
+      calc(var(--gap) + var(--border));
+    background: 
+      linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+      linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+    background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+    background-repeat: no-repeat;
+    filter: grayscale(.4);
+    transition: .5s;
+    cursor: pointer;
+  }
+  img:hover {
+    background-position: 0px 0px;
+    background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+    filter: grayscale(0);
+  }
+
+
+.button {
+    margin: 10%;
+    padding: 10px 30px;
+    background-color: #727db3;
+    color: #dcdcde;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    position: relative;
+}
+
+.button {
+    --clr: #5559AB;
+    --outline: 2px solid #dcdcde;
+    border: 2px solid var(--clr);
+    background: var(--clr);
+    color: #dcdcde;
+    outline: var(--outline);
+    transition: outline-offset 200ms ease;
+  }
+  
+  .button:hover,
+  .button:focus {
+  
+    outline: var(--outline);
+    outline-offset: -6px;
+  }
+
+footer {
+    margin: 70px -10px;
+    padding: 50px 0 20px 30px;
+    border-top: 1.5px solid #666;
+    color: #dcdcde;
+}
+
+footer .right {
+    padding: 15px 50px 0 0;
+    position: relative;
+    font-size: 13px;
+    text-align: right;
 }
