@@ -12,6 +12,7 @@ header nav h1{
     font-size: 20px;
     padding: 0 50% 5px 10%;
     font-family: Sans-Serif;
+    position: relative;
 }
 
 header nav ul {
@@ -23,5 +24,27 @@ header nav ul li {
     display: inline-block;
     padding: 15px;
     color: #727db3;
+    font-family: sans-serif;
 }
 
+header nav ul li a{
+    color: #727db3;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+header nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #727db3;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+}
