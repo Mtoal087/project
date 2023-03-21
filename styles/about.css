@@ -194,3 +194,30 @@ img {
     border-radius: 50px;
     border: 2px solid #666;
 }
+
+.work {
+    display: inline-flex;
+    margin: 70px 0 0 70px;
+}
+
+.work .date {
+    text-align: left;
+    padding: 2px 0 0 700px;
+    font-size: 20px;
+}
+
+.location {
+    margin: 0;
+    padding: 0 0 0 70px;
+    font-size: 18px;
+}
+
+.responsibilities ul{
+    margin: 90px 0 50px 90px;
+}
+
+.responsibilities ul li {
+    text-decoration: dashed;
+    font-size: 20px;
+    padding: 0 0 25px 0;
+}
