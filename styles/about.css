@@ -1,0 +1,196 @@
+body {
+    color: #dcdcde;
+}
+
+header {
+    margin: -10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0 17px 0;
+    border-bottom: 1.5px solid #dcdcde;
+}
+
+body {
+    background-color: #333;
+}
+
+header nav p{
+    margin: 0;
+    display: inline;
+    color: #727db3;
+    font-size: 15px;
+    padding: 0 50% 5px 10%;
+    font-family: Sans-Serif;
+    position: relative;
+}
+
+header nav ul {
+    display: inline-block;
+    margin: 5px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 15px 45px 5px 0;
+    color: #727db3;
+    font-family: sans-serif;
+}
+
+header nav ul li a{
+    color: #727db3;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+header nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #727db3;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+}
+
+.intro{
+    margin: -10px;
+    padding: 60px 0 50px 10%;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #dcdcde;
+    position: relative;
+}
+
+footer {
+    margin: 70px -10px;
+    padding: 50px 0 20px 30px;
+    border-top: 1.5px solid #666;
+    color: #dcdcde;
+}
+
+footer .right {
+    padding: 15px 50px 0 0;
+    position: relative;
+    font-size: 13px;
+    text-align: right;
+}
+
+.about-intro {
+    color: #dcdcde;
+    margin: 75px 0 0 0;
+}
+
+.about-intro p {
+    padding: 15px 0 0 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.heading .solid {
+    margin: 0 -10px;
+    padding: 75px 0 5px 75px;
+    color: #dcdcde;
+    border-bottom: .5px solid #dcdcde;
+}
+
+.heading .info {
+    padding: 30px 0 0 10%;
+    color: #dcdcde;
+}
+
+.heading .info {
+    display: inline-flex;
+}
+
+.heading .info .school {
+    padding: 0 0 0 100px;
+}
+
+.heading .sandt-info .date {
+    padding: 0;
+}
+
+.heading .sandt-info {
+    color: #dcdcde;
+    margin: -20px 0;
+    padding: 0 0 0 281px;
+    font-size: 20px;
+}
+
+.award .title {
+    margin: 0;
+    padding: 70px 800px 10px 110px;
+}
+
+.award .one {
+    display: inline-flex;
+}
+
+.award .one .date {
+    margin: 0;
+    padding: 70px 0 10px 0;
+    font-size: 20px;
+}
+
+.award .two {
+    display: inline-flex;
+}
+
+.award .two .date {
+    margin: 0;
+    padding: 70px 0 10px 0;
+    font-size: 20px;
+}
+
+.org1 .title {
+    margin: 0;
+    padding: 70px 685px 10px 110px;
+}
+
+.org2 .title {
+    margin: 0;
+    padding: 70px 647px 10px 110px;
+}
+
+.org3 .title {
+    margin: 0;
+    padding: 70px 549px 10px 110px;
+}
+
+.org .date {
+    margin: 0;
+    padding: 70px 0 10px 0;
+    font-size: 20px;
+}
+
+.org .org1 {
+    display: inline-flex;
+}
+
+.org2 {
+    display: inline-flex;
+}
+
+.org3 {
+    display: inline-flex;
+}
+
+.org .info {
+    margin: 0;
+    padding: 0 -100px 0 0;
+    font-size: 20px;
+}
+
+img {
+    margin: 70px 0 10px 38%;
+    width: 20%;
+    height: auto;
+    border-radius: 50px;
+    border: 2px solid #666;
+}
