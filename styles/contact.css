@@ -69,16 +69,33 @@ footer .right {
     text-align: right;
 }
 
-.mass {
+.name {
     margin: 0;
-    text-align: center;
-    padding: 40px 0 0 0;
+    padding: 80px 0 10px 80px;
+    font-size: 30px;
 }
 
-.skills p {
-    margin: 0;
-    padding: 0 0 25px 0;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
+.phone {
+    margin: 0 1500px 0 0;
+    padding: 0 0 0 200px;
+    position: relative;
+    display: inline-flex;
+}
+
+.phone .number{
+    margin: 0 1500px 0 0;
+    padding: 10px 0 0 300px;
+}
+
+.email {
+    padding: 0 0 0 200px;
+    display: inline-flex;
+}
+
+.email h2 h3 {
+    padding: 5px 0 0 1500px;
+}
+
+.address {
+    padding: 0 0 0 200px;
 }
